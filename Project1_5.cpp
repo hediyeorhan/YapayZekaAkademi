@@ -27,7 +27,7 @@ int main()
     cap.open(0, cv::CAP_ANY);
     // videonun kayit edilmesi icin gerekli parametreler ayarlaniyor.
     cv::VideoWriter writer; 
-	  writer.open(dosyaadi, cv::VideoWriter::fourcc('H','2','6','4'), int(cap.get(cv::CAP_PROP_FPS)), cv::Size((int)cap.get(cv::CAP_PROP_FRAME_WIDTH),(int) cap.get(cv::CAP_PROP_FRAME_HEIGHT)));
+    writer.open(dosyaadi, cv::VideoWriter::fourcc('H','2','6','4'), int(cap.get(cv::CAP_PROP_FPS)), cv::Size((int)cap.get(cv::CAP_PROP_FRAME_WIDTH),(int) cap.get(cv::CAP_PROP_FRAME_HEIGHT)));
     
     // video kayit suresi tutmak icin video basladıgı anda bir sayaç tutuyoruz.
     clock_t starting_time = clock();
