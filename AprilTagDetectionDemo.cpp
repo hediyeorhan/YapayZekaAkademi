@@ -25,10 +25,6 @@ using namespace std;
 cv::VideoCapture m_cap = cv::VideoCapture("/home/hediyeorhan/apriltags/example/detection.mp4");
 
 AprilTags::TagDetector* m_tagDetector = new AprilTags::TagDetector(AprilTags::tagCodes36h11);
-//AprilTags::TagCodes m_tagCodes;
-
-//m_tagCodes = AprilTags::tagCodes36h11;
-//m_tagDetector = new AprilTags::TagDetector(AprilTags::tagCodes36h11);
 
 
 void processImage(cv::Mat& image, cv::Mat& image_gray)
